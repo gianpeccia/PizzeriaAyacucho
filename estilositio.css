@@ -1,0 +1,329 @@
+.piedepagina{
+    background-color: rgb(68, 34, 21);
+    text-align: center;
+    padding: 1em 0;
+    border: solid 2px ;
+    border-color: rgb(68, 34, 21); 
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+body{
+    margin: 0;
+    text-align: center;
+    background: #F5E6E6;
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
+}
+
+h1{
+    /*font-family: 'Dancing Script',italic;*/
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #882121;
+    font-size: 40px;
+    text-shadow: 2px 0.5px #FF0000;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+h3{
+    font-family: 'Dancing Script';
+    font-size: 26px;
+}
+
+h4{
+    visibility: hidden;
+}
+
+p{
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+a{
+    color: rgb(3, 3, 0);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+a:hover{
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ----- SLIDER DE HOME ----- */
+
+#home-slider > ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+ }
+
+.slider{
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: cambio 20s infinite alternate linear;
+}
+
+.slider li{
+    width: 95%;
+    list-style: none;
+}
+
+.slider img{
+    width: 95%;
+    border-radius: 15%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.promociontexto{
+    font-style: italic;
+    font-weight: bold;
+}
+
+@keyframes cambio{      /* EFECTO DEL SLIDE */
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+}
+
+/* --------------------------------------*/
+
+/* CARTA PIZZERIA */
+.contenedormenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contenedorcarta{
+    background: rgba(255, 186, 186, 0.25);
+    border: 3px solid #ec9f9f;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.textomenu{
+    text-align: center;
+    padding: 5px;
+    background-color: #ffe7e7;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.textomenu h2{
+    /*color: #bd5252;*/
+    color: rgb(197, 46, 46);
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    padding: 5%;
+    margin-bottom: 0%;
+}
+
+.textomenu p{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.carta{
+    font-family: 'Hind Kochi';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.carta h1{
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.row{
+    padding: 1rem;
+    justify-content: center;
+}
+/*--------------------------------------------------------*/
+
+/* FORMULARIO DE CONTACTO */
+.contactoimg{
+    margin: 15px;
+    height: 100%;
+    width: 45%;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.redesSociales{
+    margin: 10px;
+    width: 40%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.redesSociales:hover{
+    filter: contrast(80%);
+}
+
+/*--------------------------------------------------------*/
+
+/* Customizaciones varias */
+.fotonosotros{
+    border-radius: 10%;
+    width: 70%;
+}
+
+.cocinero{
+    width: 100%;
+    height: 100%;
+}
+
+.portada{
+    align-items: center;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.btn-primary{
+    background-color:rgb(197, 46, 46);
+    font-weight: 800;
+    color: #cfcccc;
+    border: #000;
+    width: 80%;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 40px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+   
+    --bs-btn-active-bg: rgb(132 32 41);
+    --bs-btn-disabled-bg: rgb(132 32 41);
+}
+
+.btn-primary:hover{
+    background: #b30303;
+    --bs-btn-active-bg: rgb(132 32 41);
+    --bs-btn-disabled-bg: rgb(132 32 41);
+}
+
+.btn-secondary{
+    background-color:rgb(197, 46, 46);
+    font-weight: 800;
+    color: #cfcccc;
+    border: #000;
+    width: 30%;
+    height: 4rem;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 40px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+   
+    --bs-btn-active-bg: rgb(132 32 41);
+    --bs-btn-disabled-bg: rgb(132 32 41);
+}
+
+.btn-secondary:hover{
+    background: #b30303;
+    --bs-btn-active-bg: rgb(132 32 41);
+    --bs-btn-disabled-bg: rgb(132 32 41);
+}
+.boton__link{
+    text-decoration: none;
+}
+
+.item-title{
+    padding: 5%;
+    margin-bottom: 0%;
+
+}
+
+
+/* --------- ESTILO CARRITO DE COMPRA --------- */
+
+.item {
+    border-radius: 30px;
+}
+
+.item-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+
+.item-image {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.item-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 5%;
+}
+
+.item-details > .item-price {
+  margin: 0;
+}
+
+/* --------------------------- */
+
+/* CAARRITO DE COMPRAS */
+.shopping-cart-items {
+    padding: 20px 0px;
+}
+  
+.shopping-cart-header {
+    border-bottom: 1px solid #ccc;
+}
+  
+.shopping-cart-image {
+    max-width: 100px;
+    border-radius: 20px;
+}
+  
+.shopping-cart-quantity-input {
+    max-width: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eee;
+    padding: 5px;
+}
+  
+.shopping-cart-total {
+    min-height: 96px;
+}
+/* --------------------------- */

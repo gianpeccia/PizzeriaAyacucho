@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+header{
+    text-align: left;
+}
+
+/* MENU DESPLEGABLE PARA MOVIL */
+.logo{
+    margin: 5px;
+    margin-left: 15px;
+    width: 90px;
+    height: 60px;
+    border-radius: 15px;
+    align-items: flex-start;
+}
+
+.logo:hover{
+    filter: brightness(150%);
+}
+
+.nav-bar{
+    background: #8a0d02;
+    padding: 20px;
+    display: block;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5em;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menudesp{
+    padding: 0;
+    margin: 0;
+}
+
+.menudesp{
+    background: rgb(154, 85, 85);
+    width: 100%;
+    margin-left: -100%;
+    transition: all 0.5s;
+    position: absolute;
+    z-index: 1000;
+}
+
+.menu__link{
+    display: block;
+    padding:20px;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu__link:hover{
+    background:  rgb(126, 17, 17);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mostrar{
+    margin-left: 0;
+}
+/* ------------------------------------ */
+
+@media(max-width:768px){     /* MOVIL */
+    .logo{
+        display: none;
+    }
+    
+    .slider{
+        width: 90%;
+    }
+
+    .slider img{
+        width: 100%;
+    }
+    .mapaPC{
+        display: none;
+    }
+    .mapaTablet{
+        display: none;
+    }
+}
+
+@media(min-width:768px) {   /* TABLET - IPAD */
+    .nav-bar {
+        display: none;
+    }
+
+    .logo{
+        display: inline;
+    }
+
+    .menudesp {
+        margin-left: 0;
+        display: flex;
+        background: rgb(197, 46, 46);
+        position: relative;
+    }
+
+    .contactoimg{
+        height: 100%;
+        width: 30%;
+    }
+
+    .form-control{      /* CENTRAR FORMULARIO DE CONTACTO */
+        width: 100%;
+        margin-inline-start: 25%;
+    }
+
+    .redesSociales{
+        max-width: 35%;
+    }
+
+    .mapaCelular{
+        display: none;
+    }
+
+    .mapaTablet{
+        display: inline;
+    }
+
+    .mapaPC{
+    display: none;
+    }
+}
+
+@media(min-width:1024px) {  /* PC */
+    .menudesp {
+        margin-left: 0;
+        display: flex;
+        background: rgb(165, 24, 24);
+    }
+
+    .menu__link{
+        color: rgb(0, 0, 0);
+        font-style: italic;
+        font-weight: 700;
+        /*text-transform: uppercase;*/
+    }
+
+    .fotonosotros{
+        width: 35%;
+    }
+
+    .contactoimg{
+        width: 20%;
+    }
+
+    .redesSociales{
+        margin: 15px;
+        width: 15%;
+        height: 100%;
+        border-radius: 15px;
+    }
+
+    .mapaPC{
+        display: inline;
+    }
+
+    .mapaTablet{
+        display: none;
+    }
+}
